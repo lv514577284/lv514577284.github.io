@@ -5,19 +5,19 @@
   
 
   
-  <title>第一篇博客 | Hexo</title>
+  <title>第三篇博客 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="这是我的第一篇博客$$\frac{a}{b}$$ 123while(1)&amp;#123;	printf(&quot;%d&quot;,a);&amp;#125;">
+  <meta name="description" content="SRA转FASTQ：fastq-dump我们一般使用fastq-dump的方式是 1fastq-dump /path/to/xxx.sra  但是，请一定要注意一下，你的测序数据是单端还是双端的！！！ 在SRA网站里，有一个信息是Layout，这里会标明是不是paired，如果是双端，一定要加一个参数，否则你只会得到一个fastq文件。如果你不知道是单端还是双端，也加这个参数。 1fastq-du">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第一篇博客">
-<meta property="og:url" content="http://yoursite.com/2019/06/29/第一篇博客/index.html">
+<meta property="og:title" content="第三篇博客">
+<meta property="og:url" content="http://yoursite.com/2019/07/26/第三篇博客/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="这是我的第一篇博客$$\frac{a}{b}$$ 123while(1)&amp;#123;	printf(&quot;%d&quot;,a);&amp;#125;">
+<meta property="og:description" content="SRA转FASTQ：fastq-dump我们一般使用fastq-dump的方式是 1fastq-dump /path/to/xxx.sra  但是，请一定要注意一下，你的测序数据是单端还是双端的！！！ 在SRA网站里，有一个信息是Layout，这里会标明是不是paired，如果是双端，一定要加一个参数，否则你只会得到一个fastq文件。如果你不知道是单端还是双端，也加这个参数。 1fastq-du">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-29T12:29:41.771Z">
+<meta property="og:updated_time" content="2019-07-26T07:56:00.991Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="第一篇博客">
-<meta name="twitter:description" content="这是我的第一篇博客$$\frac{a}{b}$$ 123while(1)&amp;#123;	printf(&quot;%d&quot;,a);&amp;#125;">
+<meta name="twitter:title" content="第三篇博客">
+<meta name="twitter:description" content="SRA转FASTQ：fastq-dump我们一般使用fastq-dump的方式是 1fastq-dump /path/to/xxx.sra  但是，请一定要注意一下，你的测序数据是单端还是双端的！！！ 在SRA网站里，有一个信息是Layout，这里会标明是不是paired，如果是双端，一定要加一个参数，否则你只会得到一个fastq文件。如果你不知道是单端还是双端，也加这个参数。 1fastq-du">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -64,10 +64,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-第一篇博客" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-第三篇博客" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/06/29/第一篇博客/" class="article-date">
-  <time datetime="2019-06-29T12:27:43.808Z" itemprop="datePublished">2019-06-29</time>
+    <a href="/2019/07/26/第三篇博客/" class="article-date">
+  <time datetime="2019-07-26T07:29:17.000Z" itemprop="datePublished">2019-07-26</time>
 </a>
     
   </div>
@@ -78,7 +78,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      第一篇博客
+      第三篇博客
     </h1>
   
 
@@ -86,14 +86,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>这是我的第一篇博客<br>$$<br>\frac{a}{b}<br>$$</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span>(<span class="number">1</span>)&#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d"</span>,a);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h1 id="SRA转FASTQ：fastq-dump"><a href="#SRA转FASTQ：fastq-dump" class="headerlink" title="SRA转FASTQ：fastq-dump"></a>SRA转FASTQ：fastq-dump</h1><p>我们一般使用fastq-dump的方式是</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fastq-dump /path/to/xxx.sra</span><br></pre></td></tr></table></figure>
 
+<p>但是，请一定要注意一下，你的测序数据是<strong>单端</strong>还是<strong>双端</strong>的！！！</p>
+<p>在SRA网站里，有一个信息是Layout，这里会标明是不是paired，如果是双端，一定要加一个参数，否则你只会得到一个fastq文件。如果你<strong>不知道是单端还是双端</strong>，也加这个参数。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fastq-dump --split-3 /path/to/xxx.sra</span><br></pre></td></tr></table></figure>
+
+<p>据说官网没有说明，所以很多博客也是按第一种代码写的，血的教训，我花了两天找后面的错误才发现原来一开始就错了。</p>
+<p>fastq-dump的其他信息请参考：<a href="https://blog.csdn.net/u012110870/article/details/82500650，说的极为详细" target="_blank" rel="noopener">https://blog.csdn.net/u012110870/article/details/82500650，说的极为详细</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/06/29/第一篇博客/" data-id="cjyk3qday0000mwujcjj0fhg7" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/07/26/第三篇博客/" data-id="cjyk3qdb50002mwujqlt78ut7" class="article-share-link">Share</a>
       
       
     </footer>
@@ -102,15 +108,20 @@
     
 <nav id="article-nav">
   
-    <a href="/2019/07/26/第二篇博客/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/07/26/第四篇博客/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          (no title)
+          第四篇博客
         
       </div>
     </a>
   
+  
+    <a href="/2019/07/26/第二篇博客/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
   
 </nav>
 
