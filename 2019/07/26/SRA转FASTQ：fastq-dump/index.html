@@ -3,23 +3,23 @@
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   
-  <title>如何新建一个博客 | Hexo</title>
+  <title>SRA转FASTQ：fastq-dump | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
   
   
-  <meta name="description" content="hexo new title hexo d -g 我的博客地址 https://lv514577284.github.io/">
+  <meta name="description" content="SRA转FASTQ：fastq-dump我们一般使用fastq-dump的方式是 1fastq-dump /path/to/xxx.sra  但是，请一定要注意一下，你的测序数据是单端还是双端的！！！ 在SRA网站里，有一个信息是Layout，这里会标明是不是paired，如果是双端，一定要加一个参数，否则你只会得到一个fastq文件。如果你不知道是单端还是双端，也加这个参数。 1fastq-du">
 <meta property="og:type" content="article">
-<meta property="og:title" content="如何新建一个博客">
-<meta property="og:url" content="http://yoursite.com/2019/09/06/如何新建一个博客/index.html">
+<meta property="og:title" content="SRA转FASTQ：fastq-dump">
+<meta property="og:url" content="http://yoursite.com/2019/07/26/SRA转FASTQ：fastq-dump/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="hexo new title hexo d -g 我的博客地址 https://lv514577284.github.io/">
+<meta property="og:description" content="SRA转FASTQ：fastq-dump我们一般使用fastq-dump的方式是 1fastq-dump /path/to/xxx.sra  但是，请一定要注意一下，你的测序数据是单端还是双端的！！！ 在SRA网站里，有一个信息是Layout，这里会标明是不是paired，如果是双端，一定要加一个参数，否则你只会得到一个fastq文件。如果你不知道是单端还是双端，也加这个参数。 1fastq-du">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-09-09T14:02:45.318Z">
+<meta property="og:updated_time" content="2019-09-10T01:13:08.487Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="如何新建一个博客">
-<meta name="twitter:description" content="hexo new title hexo d -g 我的博客地址 https://lv514577284.github.io/">
+<meta name="twitter:title" content="SRA转FASTQ：fastq-dump">
+<meta name="twitter:description" content="SRA转FASTQ：fastq-dump我们一般使用fastq-dump的方式是 1fastq-dump /path/to/xxx.sra  但是，请一定要注意一下，你的测序数据是单端还是双端的！！！ 在SRA网站里，有一个信息是Layout，这里会标明是不是paired，如果是双端，一定要加一个参数，否则你只会得到一个fastq文件。如果你不知道是单端还是双端，也加这个参数。 1fastq-du">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -104,7 +104,7 @@
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;"><article id="post-如何新建一个博客" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+          <section id="main" style="float:none;"><article id="post-SRA转FASTQ：fastq-dump" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
     
@@ -112,7 +112,7 @@
         
   
     <h1 class="thumb" class="article-title" itemprop="name">
-      如何新建一个博客
+      SRA转FASTQ：fastq-dump
     </h1>
   
 
@@ -120,8 +120,8 @@
     
     <div class="article-meta">
       
-	<a href="/2019/09/06/如何新建一个博客/" class="article-date">
-	  <time datetime="2019-09-06T03:36:08.000Z" itemprop="datePublished">September 6, 2019</time>
+	<a href="/2019/07/26/SRA转FASTQ：fastq-dump/" class="article-date">
+	  <time datetime="2019-07-26T07:29:17.000Z" itemprop="datePublished">July 26, 2019</time>
 	</a>
 
        
@@ -133,9 +133,15 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>hexo new title</p>
-<p>hexo d -g</p>
-<p>我的博客地址 <a href="https://lv514577284.github.io/" target="_blank" rel="noopener">https://lv514577284.github.io/</a></p>
+        <h1 id="SRA转FASTQ：fastq-dump"><a href="#SRA转FASTQ：fastq-dump" class="headerlink" title="SRA转FASTQ：fastq-dump"></a>SRA转FASTQ：fastq-dump</h1><p>我们一般使用fastq-dump的方式是</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fastq-dump /path/to/xxx.sra</span><br></pre></td></tr></table></figure>
+
+<p>但是，请一定要注意一下，你的测序数据是<strong>单端</strong>还是<strong>双端</strong>的！！！</p>
+<p>在SRA网站里，有一个信息是Layout，这里会标明是不是paired，如果是双端，一定要加一个参数，否则你只会得到一个fastq文件。如果你<strong>不知道是单端还是双端</strong>，也加这个参数。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fastq-dump --split-3 /path/to/xxx.sra</span><br></pre></td></tr></table></figure>
+
+<p>据说官网没有说明，所以很多博客也是按第一种代码写的，血的教训，我花了两天找后面的错误才发现原来一开始就错了。</p>
+<p>fastq-dump的其他信息请参考：<a href="https://blog.csdn.net/u012110870/article/details/82500650，说的极为详细" target="_blank" rel="noopener">https://blog.csdn.net/u012110870/article/details/82500650，说的极为详细</a></p>
 
       
     </div>
@@ -175,19 +181,19 @@
     
 <nav id="article-nav">
   
-    <a href="/2019/09/12/10-斐波那契数列/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/07/26/SRA数据库下载数据/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          10.斐波那契数列
+          SRA数据库下载数据
         
       </div>
     </a>
   
   
-    <a href="/2019/07/26/LINUX软件下载后的环境配置/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2019/07/26/结构变异caller软件：DELLY/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">LINUX软件下载后的环境配置</div>
+      <div class="article-nav-title"></div>
     </a>
   
 </nav>
@@ -201,7 +207,7 @@
     <div id="toc" class="toc-article">
     <strong class="toc-title">Contents</strong>
     
-      <ol class="nav">None</ol>
+      <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#SRA转FASTQ：fastq-dump"><span class="nav-number">1.</span> <span class="nav-text">SRA转FASTQ：fastq-dump</span></a></li></ol>
     
     </div>
   </aside>
